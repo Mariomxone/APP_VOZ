@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="serif"
+        android:hint="Dicta tu Nombre"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textColorHint="#170101"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtedad"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="149dp"
+        android:fontFamily="serif"
+        android:hint="Dicta tu Edad "
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="#0C0101"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum" />
+
+    <TextView
+        android:id="@+id/txtnum"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="serif"
+        android:hint="Dicta tu núm de cel"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="#0E0101"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcorreo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="267dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="serif"
+        android:text="Da click en el microfono para introducir los datos solicitados en cada recuadro"
+        android:textAlignment="center"
+        android:textColor="#130101"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtapellidos"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="serif"
+        android:hint="Dicta tus  Apellidos"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="#0E0101"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre" />
+
+    <TextView
+        android:id="@+id/txtcorreo"
+        android:layout_width="234dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="serif"
+        android:hint="Dicta tu correo"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="#100101"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtapellidos" />
+
+    <ImageButton
+        android:id="@+id/btnnombre"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="29dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtnombre"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <ImageButton
+        android:id="@+id/btnapellidos"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="29dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtapellidos"
+        app:layout_constraintTop_toBottomOf="@+id/btnnombre"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <ImageButton
+        android:id="@+id/btncorreo"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="29dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtcorreo"
+        app:layout_constraintTop_toBottomOf="@+id/btnapellidos"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <ImageButton
+        android:id="@+id/btncel"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="29dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtnum"
+        app:layout_constraintTop_toBottomOf="@+id/btncorreo"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+    <ImageButton
+        android:id="@+id/btnedad"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="148dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtedad"
+        app:layout_constraintTop_toBottomOf="@+id/btncel"
+        app:srcCompat="@android:drawable/presence_audio_online" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
