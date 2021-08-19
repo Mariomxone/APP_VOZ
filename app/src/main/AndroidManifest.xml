@@ -10,11 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CreativosDigitalesApp">
         <activity
+            android:name=".Voz"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".Splash"
-
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Mario/AndroidStudioProjects/CreativosDigitalesApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Mario/AndroidStudioProjects/CreativosDigitalesApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Mario/AndroidStudioProjects/CreativosDigitalesApp/app/src/main/res/layout/activity_splash.xml" value="0.228125" />
+        <entry key="..\:/Users/Mario/AndroidStudioProjects/CreativosDigitalesApp/app/src/main/res/layout/activity_voz.xml" value="0.17109375" />
       </map>
     </option>
   </component>
